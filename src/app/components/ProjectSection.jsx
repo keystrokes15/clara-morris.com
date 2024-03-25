@@ -3,13 +3,19 @@ import React, { useState, useRef, useEffect } from "react";
 import ProjectCards from "./ProjectCards";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import spaceJPG from '../../../public/images/projects/space.jpg'
+import appsJPG from '../../../public/images/projects/app-icons.jpg'
+import coffeeJPG from '../../../public/images/projects/coffee.jpg'
+import developJPG from '../../../public/images/projects/develop.jpg'
+import productJPG from '../../../public/images/projects/space.jpg'
+import notesJPG from '../../../public/images/projects/wownotes.jpg'
 
 const projectData = [
     { 
         id: 1, 
         title: "Weather App",
         description: "Project 5 description",
-        image: "/images/projects/space.jpg",
+        image: spaceJPG,
         tag: ["All", "Web", "Mobile"],
         gitURL: "/",
     },
@@ -17,7 +23,7 @@ const projectData = [
         id: 2,
         title: "App Icon Designs",
         description: "Project 1 description",
-        image: "/images/projects/app-icons.jpg",
+        image: appsJPG, 
         tag: ["All", "Mobile"],
         gitURL: "/",
     },
@@ -25,7 +31,7 @@ const projectData = [
         id: 3,
         title: "Notes App",
         description: "Project 3 description",
-        image: "/images/projects/wownotes.jpg",
+        image: notesJPG,
         tag: ["All", "Web"],
         gitURL: "/",
     },
@@ -33,7 +39,7 @@ const projectData = [
         id: 4, 
         title: "Productivity App",
         description: "Project 4 description",
-        image: "/images/projects/productivity.jpg",
+        image: productJPG,
         tag: ["All", "Web"],
         gitURL: "/",
     },
@@ -41,7 +47,7 @@ const projectData = [
         id: 5, 
         title: "Pyro Coffee Company",
         description: "Project 2 description",
-        image: "/images/projects/coffee.jpg",
+        image: coffeeJPG,
         tag: ["All", "Web", "Mobile"],
         gitURL: "/",
     },
@@ -49,7 +55,7 @@ const projectData = [
         id: 6,
         title: "Development Software",
         description: "Project 6 description",
-        image: "/images/projects/develop.jpg",
+        image: developJPG,
         tag: ["All", "Web"],
         gitURL: "/",
     }
