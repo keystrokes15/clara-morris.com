@@ -16,9 +16,9 @@ const EmailSection = () => { // email section will utilise resend to send emails
     id="contact"
   >
     <div>
-      <h5 className="text-xl font-bold text-white mb-5 md:mb-2">Let's Connect!</h5>
+      <h5 className="text-xl font-bold text-white mb-5 md:mb-2">Let&apos;s Connect!</h5>
       <p className="text-zinc-400 mb-4 max-w-md">
-        Hey there! I'm always eager to connect with new people. Whether you have a question, want to discuss a project, or just want to say hello, my inbox is always open for you.
+        Hey there! I&apos;m always eager to connect with new people. Whether you have a question, want to discuss a project, or just want to say hello, my inbox is always open for you.
       </p>
       <div className="socials flex flex-row gap-2 ">
         <Link href="https://github.com" target="_blank">
