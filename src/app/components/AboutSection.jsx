@@ -63,7 +63,7 @@ return (
         {/* Text content */}
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-2">About Me</h2>
-          <p className="text-base">I&aposm a dedicated developer immersing myself in the digital world. I enjoy the challenges of coding, from debugging to designing user interfaces. With my coffee by my side, I tackle algorithms and aim to boost performance every day.</p>
+          <p className="text-base">I&apos;m a dedicated developer immersing myself in the digital world. I enjoy the challenges of coding, from debugging to designing user interfaces. With my coffee by my side, I tackle algorithms and aim to boost performance every day.</p>
           {/* Tab buttons */}
           <div className="flex flex-row justify-start mt-8">
             <TabButtons selectTab={() => tabChange("education")} active={tab === "education"}>

@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -11,14 +11,14 @@ const EmailSection = () => { // email section will utilise resend to send emails
     <motion.section
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ duration: 0.5, delay: 2.5 }}
+    transition={{ duration: 0.5, delay: 2.8 }}
     className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
     id="contact"
   >
     <div>
-      <h5 className="text-xl font-bold text-white mb-5 md:mb-2">Let&aposs Connect!</h5>
+      <h5 className="text-xl font-bold text-white mb-5 md:mb-2">Let's Connect!</h5>
       <p className="text-zinc-400 mb-4 max-w-md">
-        Hey there! I&aposm always eager to connect with new people. Whether you have a question, want to discuss a project, or just want to say hello, my inbox is always open for you.
+        Hey there! I'm always eager to connect with new people. Whether you have a question, want to discuss a project, or just want to say hello, my inbox is always open for you.
       </p>
       <div className="socials flex flex-row gap-2 ">
         <Link href="https://github.com" target="_blank">
