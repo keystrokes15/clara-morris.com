@@ -1,3 +1,4 @@
+
 "use client"
 import React from "react"
 import Image from "next/image"
@@ -45,7 +46,7 @@ const MainSection = () => {
             </motion.div>
         </div>
     </section>
-    );
-};
+    )
+}
 
 export default MainSection;

@@ -8,7 +8,7 @@ const projectData = [
     { 
         id: 1, 
         title: "Weather App",
-        description: "Project 5 description",
+        description: "Stay ahead of the forecast: accurate, intuitive, and always at your fingertips",
         image: "/images/projects/space.jpg",
         tag: ["All", "Web", "Mobile"],
         gitURL: "/",
@@ -16,7 +16,7 @@ const projectData = [
     {
         id: 2,
         title: "App Icon Designs",
-        description: "Project 1 description",
+        description: "Our designs blend creativity with functionality: get instant recognition and user engagement on any device",
         image: "/images/projects/app-icons.jpg", 
         tag: ["All", "Mobile"],
         gitURL: "/",
@@ -24,7 +24,7 @@ const projectData = [
     {
         id: 3,
         title: "Notes App",
-        description: "Project 3 description",
+        description: "Effortlessly organize thoughts and ideas with our sleek notes app",
         image: "/images/projects/wownotes.jpg",
         tag: ["All", "Web"],
         gitURL: "/",
@@ -32,7 +32,7 @@ const projectData = [
     {
         id: 4, 
         title: "Productivity App",
-        description: "Project 4 description",
+        description: "Boost productivity with our all-in-one app: seamless, efficient, and tailored to your workflow",
         image: "/images/projects/productivity.jpg",
         tag: ["All", "Web"],
         gitURL: "/",
@@ -40,7 +40,7 @@ const projectData = [
     {
         id: 5, 
         title: "Pyro Coffee Company",
-        description: "Project 2 description",
+        description: "Experience the fiery passion of Pyro Coffee Company. It's the perfect fuel for your day",
         image: "/images/projects/coffee.jpg",
         tag: ["All", "Web", "Mobile"],
         gitURL: "/",
@@ -48,7 +48,7 @@ const projectData = [
     {
         id: 6,
         title: "Development Software",
-        description: "Project 6 description",
+        description: "Empower your projects with our cutting-edge software designed to streamline your workflow",
         image: "/images/projects/develop.jpg",
         tag: ["All", "Web"],
         gitURL: "/",
@@ -78,7 +78,7 @@ const ProjectSection = () => {
     );
   
     return (
-      <section id="projects">
+      <section id="projects" className="pt-16">
         <motion.h2
           initial={{ opacity: 0 }}
           animate={isInView && animationComplete ? { opacity: 1 } : { opacity: 0 }}

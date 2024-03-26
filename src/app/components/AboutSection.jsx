@@ -11,7 +11,7 @@ const TABS_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Massachusetts Institute of Technology</li>
-        <li>University of Cambridge</li>
+        <li>University of California, Los Angeles</li>
       </ul>
     )
   },
@@ -23,6 +23,7 @@ const TABS_DATA = [
         <li>Node.js</li>
         <li>React</li>
         <li>JavaScript</li>
+        <li>Python</li>
         <li>Rust</li>
         <li>AWS</li>
         <li>Google Cloud Services</li>
@@ -34,9 +35,10 @@ const TABS_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Senior developer at Google</li>
+        <li>Software Engineer Intern at Google</li>
+        <li>Freelance Programmer</li>
+        <li>Fullstack Developer at Private Startup</li>
         <li>UI/UX Designer</li>
-        <li>Web developer</li>
       </ul>
     )  
   }

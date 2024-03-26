@@ -6,12 +6,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 
-const EmailSection = () => { // email section will utilise resend to send emails to client, but for privacy purposes ive been asked to leave that implementation out so this is basically the template
+
+const EmailSection = () => { 
+  // email section will utilise resend to send emails to client, but for privacy purposes ive been asked to leave that implementation out so this is basically the template
   return (
     <motion.section
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ duration: 0.5, delay: 2.8 }}
+    transition={{ duration: 0.5, delay: 2.3 }}
     className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
     id="contact"
   >
