@@ -3,7 +3,57 @@ import React, { useState, useRef, useEffect } from "react";
 import ProjectCards from "./ProjectCards";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import Image from 'next/image';
+
+const projectData = [
+    { 
+        id: 1, 
+        title: "Weather App",
+        description: "Stay ahead of the forecast: accurate, intuitive, and always at your fingertips",
+        image: "/images/projects/space.jpg",
+        tag: ["All", "Web", "Mobile"],
+        gitURL: "/",
+    },
+    {
+        id: 2,
+        title: "App Icon Designs",
+        description: "Our designs blend creativity with functionality: get instant recognition and user engagement on any device",
+        image: "/images/projects/app-icons.jpg", 
+        tag: ["All", "Mobile"],
+        gitURL: "/",
+    },
+    {
+        id: 3,
+        title: "Notes App",
+        description: "Effortlessly organize thoughts and ideas with our sleek notes app",
+        image: "/images/projects/wownotes.jpg",
+        tag: ["All", "Web"],
+        gitURL: "/",
+    },
+    {
+        id: 4, 
+        title: "Productivity App",
+        description: "Boost productivity with our all-in-one app: seamless, efficient, and tailored to your workflow",
+        image: "/images/projects/productivity.jpg",
+        tag: ["All", "Web"],
+        gitURL: "/",
+    },
+    {
+        id: 5, 
+        title: "Pyro Coffee Company",
+        description: "Experience the fiery passion of Pyro Coffee Company. It's the perfect fuel for your day",
+        image: "/images/projects/coffee.jpg",
+        tag: ["All", "Web", "Mobile"],
+        gitURL: "/",
+    },
+    {
+        id: 6,
+        title: "Development Software",
+        description: "Empower your projects with our cutting-edge software designed to streamline your workflow",
+        image: "/images/projects/develop.jpg",
+        tag: ["All", "Web"],
+        gitURL: "/",
+    }
+]
 
 const ProjectSection = () => {
     const [tag, setTag] = useState("All");
@@ -22,57 +72,6 @@ const ProjectSection = () => {
     const tagChange = (newTag) => {
       setTag(newTag);
     };
-  
-    const projectData = [
-        { 
-            id: 1, 
-            title: "Weather App",
-            description: "Stay ahead of the forecast: accurate, intuitive, and always at your fingertips",
-            tag: ["All", "Web", "Mobile"],
-            gitURL: "/",
-            image: "/images/projects/space.jpg",
-        },
-        {
-            id: 2,
-            title: "App Icon Designs",
-            description: "Our designs blend creativity with functionality: get instant recognition and user engagement on any device",
-            tag: ["All", "Mobile"],
-            gitURL: "/",
-            image: "/images/projects/app-icons.jpg", 
-        },
-        {
-            id: 3,
-            title: "Notes App",
-            description: "Effortlessly organize thoughts and ideas with our sleek notes app",
-            tag: ["All", "Web"],
-            gitURL: "/",
-            image: "/images/projects/wownotes.jpg",
-        },
-        {
-            id: 4, 
-            title: "Productivity App",
-            description: "Boost productivity with our all-in-one app: seamless, efficient, and tailored to your workflow",
-            tag: ["All", "Web"],
-            gitURL: "/",
-            image: "/images/projects/productivity.jpg",
-        },
-        {
-            id: 5, 
-            title: "Pyro Coffee Company",
-            description: "Experience the fiery passion of Pyro Coffee Company. It's the perfect fuel for your day",
-            tag: ["All", "Web", "Mobile"],
-            gitURL: "/",
-            image: "/images/projects/coffee.jpg",
-        },
-        {
-            id: 6,
-            title: "Development Software",
-            description: "Empower your projects with our cutting-edge software designed to streamline your workflow",
-            tag: ["All", "Web"],
-            gitURL: "/",
-            image: "/images/projects/develop.jpg",
-        }
-    ];
   
     const filterProjects = projectData.filter((project) =>
       project.tag.includes(tag)
@@ -132,4 +131,4 @@ const ProjectSection = () => {
     );
   };
   
-export default ProjectSection;
+  export default ProjectSection;
