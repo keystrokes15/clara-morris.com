@@ -9,9 +9,17 @@ const TABS_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Massachusetts Institute of Technology</li>
-        <li>University of California, Los Angeles</li>
+      <ul className="list-disc pl-5">
+        <li>Leander High School, 3.8 GPA</li>
+          <ul className="list-disc pl-8">
+            <li>IB Diploma Candidate</li>
+            <li>Honors/Advanced Placement Programs</li>
+          </ul>
+        <li>Texas A&M University, Corpus Christi,  4.0 GPA</li>
+          <ul className="list-disc pl-8">
+            <li>Currently enrolled as a freshman</li>
+            <li>Computer Science, Systems Programming</li>
+          </ul>
       </ul>
     )
   },
@@ -19,14 +27,13 @@ const TABS_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>React</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Rust</li>
-        <li>AWS</li>
-        <li>Google Cloud Services</li>
+      <ul className="list-disc pl-5">
+        <li>foo</li>
+        <li>fi</li>
+        <li>fo</li>
+        <li>fum</li>
+        <li>foo</li>
+        <li>fi</li>
       </ul>
     )
   },
@@ -34,11 +41,11 @@ const TABS_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Software Engineer Intern at Google</li>
-        <li>Freelance Programmer</li>
-        <li>Fullstack Developer at Private Startup</li>
-        <li>UI/UX Designer</li>
+      <ul className="list-disc pl-5">
+        <li>cool</li>
+        <li>stuff</li>
+        <li>ive</li>
+        <li>done</li>
       </ul>
     )  
   }
@@ -61,11 +68,15 @@ return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.9, delay: 0.7 }} className="col-span-7 place-self-center text-center sm:text-left">
       <div className="md:grid md:grid-cols-2 gap-8 py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         {/* Image component */}
-        <Image src="/images/fancy-picture.jpg" width={650} height={650} alt='aesthetic pink image' priority />
-        {/* Text content */}
+        <div className="relative overflow-hidden rounded-3xl border border-transparent">
+          <div className="absolute top-0 left-0 right-0" style={{ marginTop: '-50px' }}>
+            <Image className="object-cover" src="/images/beach.jpg" width={650} height={650} alt='aesthetic pink image' priority/>
+          </div>
+        </div>
+
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-2">About Me</h2>
-          <p className="text-base">I&apos;m a dedicated developer immersing myself in the digital world. I enjoy the challenges of coding, from debugging to designing user interfaces. With my coffee by my side, I tackle algorithms and aim to boost performance every day.</p>
+          <p className="text-base">I&apos;m currently studying Computer Science in university, where I&apos;m exploring the world of programming and software development. My concentration is in systems programming, and I aspire to become a skilled developer in order to create efficient and impactful solutions to global issues.</p>
           {/* Tab buttons */}
           <div className="flex flex-row justify-start mt-8">
             <TabButtons selectTab={() => tabChange("education")} active={tab === "education"}>

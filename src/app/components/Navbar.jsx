@@ -5,20 +5,19 @@ import NavbarLinks from "./NavbarLinks";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
-
 const navbarLinks = [
   {
-    title: "Contact",
-    path: "#contact",
+    title: "About",
+    path: "#about",
   },
   {
     title: "Projects",
     path: "#projects",
   },
   {
-    title: "About",
-    path: "#about",
-  },
+    title: "Contact",
+    path: "#contact",
+  }
 ];
 
 const Navbar = () => {
@@ -26,23 +25,24 @@ const Navbar = () => {
 
   return (
     <nav className="fixed mx-auto border-b border-b-zinc-700 top-0 left-0 right-0 z-10 bg-zinc-950 bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-42xl text-white font-semibold">
-          LOGO
+      <div className="flex container lg:py-3 flex-wrap items-center justify-between mx-auto px-4 py-2">
+          <Link href="#" onClick={handleScrollToTop} className="flex items-center invert">
+              <img src="/images/key(2).svg" alt="Logo" className="h-8 md:h-10" />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button 
               onClick={() => setNavbarOpen(true)}
               className="flex items-center px-3 py-2 text-zinc-400 hover:text-white hover:border-white"
-            ><Bars3Icon className="h-5 w-5" /></button>
+            >
+              <Bars3Icon className="h-5 w-5" />
+            </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2  text-zinc-400 hover:text-white hover:border-white"
-            ><XMarkIcon className="h-5 w-5" />
+              className="flex items-center px-3 py-2 text-zinc-400 hover:text-white hover:border-white"
+            >
+              <XMarkIcon className="h-5 w-5" />
             </button>
           )}
         </div>
@@ -59,6 +59,14 @@ const Navbar = () => {
       {navbarOpen ? <MenuOverlay links={navbarLinks} /> : null}
     </nav>
   );
+};
+
+const handleScrollToTop = (e) => {
+  e.preventDefault(); // Prevent default anchor behavior
+  window.scrollTo({
+    top: 0, // Scroll to the top of the page
+    behavior: "smooth", // Smooth scrolling
+  });
 };
 
 export default Navbar;
