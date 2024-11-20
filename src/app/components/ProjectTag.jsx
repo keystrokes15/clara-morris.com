@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProjectTag = ({ name, onClick, isSelected }) => {
-   const buttonStyles = isSelected ? "text-white bg-[#27272c] border border-pink-400 transition-colors" : "text-white bg-zinc-900 border border-zinc-500 hover:bg-[#27272c] transition-colors";
+   const buttonStyles = isSelected ? "text-white bg-[#27272c] border border-cyan-500 transition-colors" : "text-white bg-zinc-900 border border-zinc-500 hover:bg-[#27272c] transition-colors";
    
    // Centering text using flexbox
    const containerStyles = {

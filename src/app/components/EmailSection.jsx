@@ -14,7 +14,7 @@ const EmailSection = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.5, delay: 2.3 }}
-    className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
+    className="grid md:grid-cols-2 my-12 md:my-12 py-8 gap-4"
     id="contact"
   >
     <div>

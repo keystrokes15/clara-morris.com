@@ -52,7 +52,55 @@ const projectData = [
         image: "/images/projects/develop.jpg",
         tag: ["All", "Web"],
         gitURL: "/",
-    }
+    },
+    { 
+      id: 7, 
+      title: "Weather App",
+      description: "Stay ahead of the forecast: accurate, intuitive, and always at your fingertips",
+      image: "./images/projects/space.jpg",
+      tag: ["All", "Web", "Mobile"],
+      gitURL: "/",
+  },
+  {
+      id: 8,
+      title: "App Icon Designs",
+      description: "Our designs blend creativity with functionality: get instant recognition and user engagement on any device",
+      image: "./images/projects/app-icons.jpg", 
+      tag: ["All", "Mobile"],
+      gitURL: "/",
+  },
+  {
+      id: 9,
+      title: "Notes App",
+      description: "Effortlessly organize thoughts and ideas with our sleek notes app",
+      image: "./images/projects/wownotes.jpg",
+      tag: ["All", "Web"],
+      gitURL: "/",
+  },
+  {
+      id: 10, 
+      title: "Productivity App",
+      description: "Boost productivity with our all-in-one app: seamless, efficient, and tailored to your workflow",
+      image: "/images/projects/productivity.jpg",
+      tag: ["All", "Web"],
+      gitURL: "/",
+  },
+  {
+      id: 11, 
+      title: "Pyro Coffee Company",
+      description: "Experience the fiery passion of Pyro Coffee Company. It's the perfect fuel for your day",
+      image: "/images/projects/coffee.jpg",
+      tag: ["All", "Web", "Mobile"],
+      gitURL: "/",
+  },
+  {
+      id: 12,
+      title: "Development Software",
+      description: "Empower your projects with our cutting-edge software designed to streamline your workflow",
+      image: "/images/projects/develop.jpg",
+      tag: ["All", "Web"],
+      gitURL: "/",
+  }
 ]
 
 const ProjectSection = () => {
@@ -78,7 +126,7 @@ const ProjectSection = () => {
     );
   
     return (
-      <section id="projects" className="pt-16">
+      <section id="projects" className="pt-8">
         <motion.h2
           initial={{ opacity: 0 }}
           animate={isInView && animationComplete ? { opacity: 1 } : { opacity: 0 }}

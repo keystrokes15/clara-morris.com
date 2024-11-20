@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="fixed mx-auto border-b border-b-zinc-700 top-0 left-0 right-0 z-10 bg-zinc-950 bg-opacity-100">
       <div className="flex container lg:py-3 flex-wrap items-center justify-between mx-auto px-4 py-2">
           <Link href="#" onClick={handleScrollToTop} className="flex items-center invert">
-              <img src="/images/key(2).svg" alt="Logo" className="h-8 md:h-10" />
+              <img src="/images/clara(4).svg" alt="Logo" className="h-8 md:h-9" />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

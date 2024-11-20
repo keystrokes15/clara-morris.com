@@ -15,7 +15,7 @@ const MainSection = () => {
                 Welcome to {" "}
                 </span>
                 <br></br>
-                <TypeAnimation sequence={['My Portfolio', 6000, '']} 
+                <TypeAnimation sequence={['My Portfolio', 6000, '', 300]} 
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
